@@ -1,0 +1,41 @@
+
+
+@import "reset";
+@import "grid";
+
+
+/* ------------------------------------- *\
+    Less-grid test styles
+\* ------------------------------------- */
+
+body {
+    background-color: #f7f7f7;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 10px;
+}
+
+
+h1 {
+    background-color: @theme-bg-color;
+    font-size: 38px;
+    text-align: center;
+    color: @theme-font-color;
+}
+
+.grid {
+    // margin: 20px;
+    // border: 10px solid #fff;
+
+    .demo-block {
+        margin: 10px;
+        line-height: 50px;
+        background-color: @theme-bg-color;
+        text-align: center;
+        color: @theme-font-color;
+        border-radius: 4px;
+    }
+}

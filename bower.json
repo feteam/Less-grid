@@ -1,0 +1,8 @@
+{
+	"name": "Less-grid",
+	"version": "0.0.1",
+	"dependencies": {},
+	"devDependencies": {
+		"less.js": "~1.5.0"
+	}
+}

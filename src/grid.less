@@ -1,0 +1,103 @@
+/* ------------------------------------- *\
+    Less-grid v0.0.1
+    Source: https://github.com/feteam/Less-grid
+    Author: @WalkerBe http://www.walkerbe.com/
+
+    MIT
+\* ------------------------------------- */
+
+
+
+// For debug
+// ----------------------
+@theme-font-color: #b9c8e0;
+@theme-bg-color: #1d365d;
+
+
+
+
+// Settings
+// ----------------------
+@column-count: 12;
+@column-margin: 20px;
+@column-font-size: 14px;
+
+
+
+.grid {
+    font-size: 0;
+}
+
+.column ( @number ) {
+	display: inline-block;
+	width: @number * (100% / @column-count);
+    // padding-left: @column-margin;
+    // background-color: #ccc;
+    font-size: @column-font-size;
+}
+
+
+.grid-col-1 {
+    .column(1);
+}
+
+.grid-col-2 {
+    .column(2);
+}
+
+.grid-col-3 {
+    .column(3);
+}
+
+.grid-col-4 {
+    .column(4);
+}
+
+.grid-col-5 {
+    .column(5);
+}
+
+.grid-col-6 {
+    .column(6);
+}
+
+.grid-col-7 {
+    .column(7);
+}
+
+.grid-col-8 {
+    .column(8);
+}
+
+.grid-col-9 {
+    .column(9);
+}
+
+.grid-col-10 {
+    .column(10);
+}
+
+.grid-col-11 {
+    .column(11);
+}
+
+.grid-col-12 {
+    .column(12);
+}
+
+
+@media screen and ( min-width: 1024px ) {
+    // pc -- default
+}
+
+
+@media screen and ( min-width: 481px ) and ( max-width: 1023px ) {
+    // pad
+    .grid-col-pad-12 {
+        .column(12);
+    }
+}
+
+@media screen and ( max-width: 480px ) {
+    // mobile
+}
